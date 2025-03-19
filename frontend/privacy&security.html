@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>
+        Privacy and Security
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1e3a8a, #d1d5db);
+        }
+        .toggle-checkbox:checked {
+            right: 0;
+            border-color: #3b82f6;
+        }
+        .toggle-checkbox:checked + .toggle-label {
+            background-color: #3b82f6;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+<div class="min-h-screen flex flex-col items-center">
+    <div class="w-full bg-black text-white flex items-center p-4">
+        <img alt="Sparfie logo" class="h-10 w-10 rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/huqoGmrKqn8_BwcI0C3lGHZ6z9Ga7OItOtuWcfqfbRA.jpg" width="50"/>
+        <h1 class="text-xl font-bold">
+            Sparfie
+        </h1>
+    </div>
+    <div class="w-full max-w-4xl mt-8 p-4 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">
+            Privacy and security
+        </h2>
+        <h3 class="text-xl font-semibold mb-2">
+            Security
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-2">
+                <p>
+                    Sign-in Email
+                </p>
+                <p>
+                    Password
+                </p>
+                <p>
+                    2-FA authentication
+                </p>
+                <p>
+                    Phone number
+                </p>
+                <p>
+                    Reserve codes
+                </p>
+            </div>
+            <div class="space-y-2">
+                <p>
+                    johnsmith@gmail.com
+                </p>
+                <button class="bg-blue-500 text-white px-2 py-1 rounded">
+                    View password
+                </button>
+                <div class="flex items-center">
+                    <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                        <input class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer" id="toggle" name="toggle" type="checkbox"/>
+                        <label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" for="toggle">
+                        </label>
+                    </div>
+                </div>
+                <p>
+                    +380 93 123 45 67
+                </p>
+                <p>
+                    9 of 10 left
+                </p>
+            </div>
+        </div>
+        <h3 class="text-xl font-semibold mt-8 mb-2">
+            Linked devices
+        </h3>
+        <div class="space-y-2">
+            <p>
+                Last sign in
+            </p>
+            <p>
+                today at 18:34, Safary 198.123.23.23
+            </p>
+            <p>
+                Total active sessions (5)
+            </p>
+            <p>
+                DESKTOP-6TI6E6C • Kyiv, Ukraine
+            </p>
+            <p>
+                Chrome • Used right now
+            </p>
+            <p>
+                Iphone 11 • Kyiv, Ukraine
+            </p>
+            <p>
+                Chrome • 04/19/2022
+            </p>
+        </div>
+        <div class="mt-4">
+            <a class="text-green-500" href="#">
+                All
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

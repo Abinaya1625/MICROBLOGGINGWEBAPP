@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sparfie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .main-container {
+            background: linear-gradient(to bottom, #3b82f6, #e5e7eb);
+            height: 100vh;
+            overflow-y: auto;
+        }
+        /* Dark Mode Background & Text */
+body.dark {
+    background: #1a1a1a !important;
+    color: white !important;
+}
+
+/* Dark Mode for Sidebar */
+.dark .bg-white {
+    background: #121212 !important;
+    color: white !important;
+}
+.dark .sidebar a {
+    color: white !important;
+}
+.dark .sidebar a:hover {
+    background: #3b3b3b !important;
+}
+
+/* Dark Mode for Containers */
+.dark .settings-container, 
+.dark .notifications-container, 
+.dark .ai-container {
+    background: #2a2a2a !important;
+    color: white !important;
+}
+
+/* Dark Mode for Headers */
+.dark .settings-header, 
+.dark .notifications-header {
+    background: #2a2a2a !important;
+}
+
+/* Dark Mode for Buttons */
+.dark .toggle {
+    background: #3b3b3b !important;
+}
+.dark .toggle.active {
+    background: #3b82f6 !important;
+}
+
+    </style>
+</head>
+<body>
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="bg-white text-black w-1/5 flex flex-col justify-between py-4 fixed h-full shadow-lg">
+            <div class="flex flex-col items-center">
+                <div class="mb-8 flex flex-col items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/RXrPbydq0XoJMrMHuVla_S2C67GmyPMhdxfkdCMWzek.jpg" 
+                         alt="User profile picture" class="rounded-full" width="50" height="50"/>
+                    <h1 class="text-xl font-bold mt-2">Sparfie</h1>
+                </div>
+                <nav class="flex flex-col space-y-4 w-full px-4">
+                    <a href="home.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded bg-gray-200 font-semibold">
+                        <i class="fas fa-home"></i><span>Home</span>
+                    </a>
+                    <a href="message.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-envelope"></i><span>Message</span>
+                    </a>
+                    <a href="post.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-plus-square"></i><span>Post</span>
+                    </a>
+                    <a href="news.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-newspaper"></i><span>News</span>
+                    </a>
+                    <a href="notifications.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-bell"></i><span>Notifications</span>
+                    </a>
+                    <a href="search.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-search"></i><span>Search</span>
+                    </a>
+                    <a href="profile.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-user"></i><span>Profile</span>
+                    </a>
+                    <a href="settings.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                        <i class="fas fa-cog"></i><span>Settings</span>
+                    </a>
+                </nav>
+            </div>
+            <!-- AI & Logout Buttons -->
+            <div class="w-full px-4">
+                <a href="ai.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200">
+                    <i class="fas fa-robot"></i><span>AI</span>
+                </a>
+                <a href="login.html" class="flex items-center space-x-2 w-full py-2 px-4 rounded hover:bg-gray-200 text-red-500">
+                    <i class="fas fa-sign-out-alt"></i><span>Logout</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-container flex-1 flex flex-col ml-[20%] mr-[20%] p-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white p-4 rounded-lg shadow mb-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/a1aa/image/RXrPbydq0XoJMrMHuVla_S2C67GmyPMhdxfkdCMWzek.jpg" 
+                             alt="User profile picture" class="rounded-full mr-2" width="40" height="40"/>
+                        <div>
+                            <h2 class="font-bold">Farita Smith</h2>
+                            <p class="text-gray-500">@smithfira</p>
+                        </div>
+                    </div>
+                    <img src="https://storage.googleapis.com/a1aa/image/CA_UC3_08PmCP62nL_YoxC72HSvEO-tgGaOjoB5wm_M.jpg" 
+                         alt="A young woman with long hair in a yellow dress standing in a field" width="100%" height="400"/>
+                    <div class="flex items-center mt-4">
+                        <i class="far fa-heart mr-2"></i>
+                        <i class="far fa-comment"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Suggestions Section -->
+        <div class="w-1/4 p-4 bg-gray-100 fixed right-0 h-full overflow-y-auto">
+            <h2 class="font-bold text-lg mb-4">Suggestions</h2>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/IDXbKXucgLdmdsNXw-nwkoQ_-8iwIOwdeeC9QrtCaFs.jpg" 
+                         alt="Profile picture" class="rounded-full mr-2" width="40" height="40"/>
+                    <p class="font-bold flex-1">antony_24</p>
+                    <button class="bg-blue-500 text-white px-2 py-1 rounded">Connect</button>
+                </div>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/4kn5rM-0HN44QKC1bHXzCNZYlP66ACmLM3WjmuzOAUE.jpg" 
+                         alt="Profile picture" class="rounded-full mr-2" width="40" height="40"/>
+                    <p class="font-bold flex-1">mike__20</p>
+                    <button class="bg-blue-500 text-white px-2 py-1 rounded">Connect</button>
+                </div>
+                <div class="flex items-center">
+                    <img src="https://storage.googleapis.com/a1aa/image/6eQzwP1UnlNDTCwADj0ftj_5BquHCDwmgegoSfaJs_s.jpg" 
+                         alt="Profile picture" class="rounded-full mr-2" width="40" height="40"/>
+                    <p class="font-bold flex-1">anyaa_1028</p>
+                    <button class="bg-blue-500 text-white px-2 py-1 rounded">Connect</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function applyTheme() {
+    const darkMode = localStorage.getItem("darkMode") === "enabled";
+    document.body.classList.toggle("dark", darkMode);
+    document.getElementById("darkToggle")?.classList.toggle("active", darkMode);
+
+    // Apply dark mode to the sidebar
+    const sidebar = document.querySelector(".sidebar");
+    if (sidebar) {
+        sidebar.classList.toggle("dark-sidebar", darkMode);
+    }
+}
+
+function toggleDarkMode() {
+    const isDarkMode = document.body.classList.contains("dark");
+    localStorage.setItem("darkMode", isDarkMode ? "disabled" : "enabled");
+    applyTheme();
+}
+
+// Apply dark mode when the page loads
+document.addEventListener("DOMContentLoaded", applyTheme);
+
+    </script>
+</body>
+</html>

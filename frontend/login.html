@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sparfie Login</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+</head>
+<body class="bg-gradient-to-b from-blue-500 to-blue-700 flex items-center justify-center min-h-screen font-roboto">
+    <div class="flex flex-col md:flex-row items-center justify-center w-full">
+        <!-- Mobile View -->
+        <div class="bg-white rounded-lg shadow-lg p-8 w-80 md:hidden">
+            <div class="flex flex-col items-center">
+                <img alt="Sparfie logo" class="mb-4" height="50" src="https://storage.googleapis.com/a1aa/image/11pZNRnETW9w8OqbIQ0ldRN-OcGJE38G-LtjzQO4InE.jpg" width="50"/>
+                <h1 class="text-3xl font-bold text-black mb-6">Sparfie</h1>
+                <input id="email" class="mb-4 p-2 w-full rounded-lg bg-gray-200" placeholder="Email" type="text"/>
+                <input id="password" class="mb-4 p-2 w-full rounded-lg bg-gray-200" placeholder="Password" type="password"/>
+                <a class="text-sm text-blue-300 mb-4" href="#">Forgot Password?</a>
+                <button onclick="loginUser(event)" class="bg-blue-800 text-white py-2 px-4 rounded-lg w-full mb-4">
+                    Login
+                </button>
+                <div class="text-sm">
+                    <span class="text-gray-500">Don't have an account?</span>
+                    <a class="text-blue-300" href="signup.html">Sign-up</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop View -->
+        <div class="hidden md:flex flex-col items-center bg-white rounded-lg shadow-lg p-8 w-96">
+            <div class="flex flex-col items-center">
+                <img alt="Sparfie logo" class="mb-4" height="50" src="logo.jpg" width="50"/>
+                <h1 class="text-3xl font-bold text-black mb-6">Sparfie</h1>
+                <input id="email" class="mb-4 p-2 w-full rounded-lg bg-gray-200" placeholder="Email" type="text"/>
+                <input id="password" class="mb-4 p-2 w-full rounded-lg bg-gray-200" placeholder="Password" type="password"/>
+                <a class="text-sm text-blue-300 mb-4" href="#">Forgot Password?</a>
+                <button onclick="loginUser(event)" class="bg-blue-800 text-white py-2 px-4 rounded-lg w-full mb-4">
+                    Login
+                </button>
+                <div class="flex items-center mb-4">
+                    <div class="border-t border-gray-300 flex-grow mr-3"></div>
+                    <span class="text-gray-500">OR</span>
+                    <div class="border-t border-gray-300 flex-grow ml-3"></div>
+                </div>
+                <button class="bg-gray-200 text-black py-2 px-4 rounded-lg w-full flex items-center justify-center mb-4">
+                    <img alt="Google logo" class="mr-2" height="20" src="https://storage.googleapis.com/a1aa/image/JCoOlTluU58rEvrilR06DzGiAOLtkNd9LkHDIBbjgto.jpg" width="20"/>
+                    Sign in with Google
+                </button>
+                <div class="text-sm">
+                    <span class="text-gray-500">Don't have an account?</span>
+                    <a class="text-blue-300" href="signup.html">Sign-up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

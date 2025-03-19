@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Chat App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-200">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-blue-900 text-white flex flex-col">
+            <div class="flex items-center justify-between p-4 border-b border-gray-700">
+                <h2 class="text-lg font-semibold">Recent Chats</h2>
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="flex justify-around p-4 border-b border-gray-700">
+                <button class="bg-blue-700 px-3 py-1 rounded-full">All chats</button>
+                <button class="px-3 py-1">Personal</button>
+                <button class="px-3 py-1">Work</button>
+                <button class="px-3 py-1">Group</button>
+            </div>
+            <div class="flex-1 overflow-y-auto">
+                <button class="w-full text-left p-4 flex items-center border-b border-gray-700 hover:bg-blue-800">
+                    <img alt="User image" class="rounded-full mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/j5vqqKG4fTkJfMIFT4dE5AOUKtRRgpMHxEQvDyFdAUU.jpg" width="40"/>
+                    <div>
+                        <h3 class="font-semibold">Fullsnack Designers</h3>
+                        <p class="text-sm text-gray-400">Hello guys, we have discussed about...</p>
+                    </div>
+                </button>
+                <button class="w-full text-left p-4 flex items-center border-b border-gray-700 hover:bg-blue-800">
+                    <img alt="User image" class="rounded-full mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/j5vqqKG4fTkJfMIFT4dE5AOUKtRRgpMHxEQvDyFdAUU.jpg" width="40"/>
+                    <div>
+                        <h3 class="font-semibold">Lee Williamson</h3>
+                        <p class="text-sm text-gray-400">Yes, that's great work, hopefully...</p>
+                    </div>
+                </button>
+                <button class="w-full text-left p-4 flex items-center border-b border-gray-700 hover:bg-blue-800">
+                    <img alt="User image" class="rounded-full mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/j5vqqKG4fTkJfMIFT4dE5AOUKtRRgpMHxEQvDyFdAUU.jpg" width="40"/>
+                    <div>
+                        <h3 class="font-semibold">Ronald Mccoy</h3>
+                        <p class="text-sm text-gray-400">Thanks dude 😊</p>
+                    </div>
+                </button>
+                <button class="w-full text-left p-4 flex items-center border-b border-gray-700 hover:bg-blue-800">
+                    <img alt="User image" class="rounded-full mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/j5vqqKG4fTkJfMIFT4dE5AOUKtRRgpMHxEQvDyFdAUU.jpg" width="40"/>
+                    <div>
+                        <h3 class="font-semibold">Albert Bell</h3>
+                        <p class="text-sm text-gray-400">I'm happy the anime has been adapted...</p>
+                    </div>
+                </button>
+            </div>
+            <div class="p-4">
+                <button class="bg-blue-700 w-full py-2 rounded-full flex items-center justify-center">
+                    <i class="fas fa-plus mr-2"></i>
+                    New Chat
+                </button>
+            </div>
+        </div>
+        <!-- Chat Area -->
+        <div class="flex-1 flex flex-col">
+            <div class="flex items-center justify-between p-4 bg-white shadow">
+                <div class="flex items-center">
+                    <img alt="Group image" class="rounded-full mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/szq_jGO6JH0KtqtTvPTPfLG0ZDcJpbQN77gyj3Tm1H0.jpg" width="40"/>
+                    <div>
+                        <h3 class="font-semibold">Fullsnack Designers</h3>
+                        <p class="text-sm text-gray-500">7 Online, Total 24 people</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-gray-500 mr-4"></i>
+                    <i class="fas fa-video text-gray-500 mr-4"></i>
+                    <i class="fas fa-ellipsis-v text-gray-500"></i>
+                </div>
+            </div>
+            <div id="chatArea" class="flex-1 p-4 bg-gradient-to-b from-gray-200 to-gray-300 overflow-y-auto">
+                <div class="flex flex-col items-start mb-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md w-3/4">
+                        <img alt="Vacation images" class="rounded-lg mb-2" height="100" src="https://storage.googleapis.com/a1aa/image/sP7-VlY1i6FBD_RWTwrqN8229ny6QolNDzqELj24I3U.jpg" width="200"/>
+                        <p>Hello guys, we have discussed about post-corona vacation plan and our decision is to go to Bali. We all were agreed to go there. Any other suggestions? Here are some images about our destination</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end mb-4">
+                    <div class="bg-blue-500 text-white p-4 rounded-lg shadow-md w-3/4">
+                        <p>That's very nice place! you guys made a very good decision. Can't wait to go on vacation!</p>
+                        <span class="text-sm text-gray-200 mt-2 block">16:04</span>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 bg-white shadow flex items-center">
+                <i class="fas fa-smile text-gray-500 mr-4"></i>
+                <input id="messageInput" class="flex-1 p-2 border border-gray-300 rounded-lg" placeholder="Write a message..." type="text"/>
+                <i id="sendButton" class="fas fa-paper-plane text-blue-500 ml-4 cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('sendButton').addEventListener('click', function() {
+            const messageInput = document.getElementById('messageInput');
+            const messageText = messageInput.value.trim();
+            if (messageText !== '') {
+                const chatArea = document.getElementById('chatArea');
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('flex', 'flex-col', 'items-end', 'mb-4');
+                messageElement.innerHTML = `
+                    <div class="bg-blue-500 text-white p-4 rounded-lg shadow-md w-3/4">
+                        <p>${messageText}</p>
+                        <span class="text-sm text-gray-200 mt-2 block">${new Date().toLocaleTimeString()}</span>
+                    </div>
+                `;
+                chatArea.appendChild(messageElement);
+                messageInput.value = '';
+                chatArea.scrollTop = chatArea.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>

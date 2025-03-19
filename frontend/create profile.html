@@ -1,0 +1,56 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Create Profile
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            background: linear-gradient(to bottom, #1e3a8a, #d1d5db);
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="flex items-center justify-center min-h-screen">
+  <div class="text-center">
+   <div class="flex items-center justify-center mb-8">
+    <img alt="Sparfie logo" class="rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/moAPjJ-6kArhMEhrP-Hne1KOThbl4UFU8yWqWSkVvYY.jpg" width="50"/>
+    <span class="ml-2 text-white text-xl font-bold">
+     Sparfie
+    </span>
+   </div>
+   <h1 class="text-3xl font-bold mb-6" style="font-family: 'Brush Script MT', cursive;">
+    CREATE YOUR PROFILE
+   </h1>
+   <div class="relative mb-6">
+    <img alt="Profile picture" class="w-24 h-24 rounded-full mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/9oy3wBSlz0bwc8oYJaay_DX636B3uEt8oSCj8olCzTg.jpg" width="100"/>
+    <i class="fas fa-camera absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 text-xl text-blue-500">
+    </i>
+   </div>
+   <form class="space-y-4">
+    <input class="w-full px-4 py-2 border rounded-md" placeholder="Full name" type="text"/>
+    <input class="w-full px-4 py-2 border rounded-md" placeholder="Username" type="text"/>
+    <input class="w-full px-4 py-2 border rounded-md" placeholder="Phone number" type="text"/>
+    <div class="flex space-x-4">
+     <input class="w-1/2 px-4 py-2 border rounded-md" placeholder="Country" type="text"/>
+     <input class="w-1/2 px-4 py-2 border rounded-md" placeholder="Gender" type="text"/>
+    </div>
+    <button class="w-full px-4 py-2 bg-blue-600 text-white rounded-md" type="button" onclick="redirectToHome()">
+        SUBMIT
+    </button>
+    
+    <script>
+        function redirectToHome() {
+            window.location.href = "home.html"; // Redirects to home page
+        }
+    </script>
+    
+   </form>
+  </div>
+ </body>
+</html>
